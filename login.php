@@ -11,16 +11,21 @@
 <body>
   
 <div class="container">
-	<form>
-    	<h2 class="text-center">Login Page</h2>
-        	
-            <input type="text" class="form-control" name="User id" placeholder="User id">
-            <input type="password" class="form-control" name="Password" placeholder="Password">
-                	
-             <div class="align-center">
-             <button type="submit" class="btn btn-primary btn-block" name="Submit" value="Login">Login</button>
-             </div>
-     </form>
+  <h2>Login Page</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>
        
 
