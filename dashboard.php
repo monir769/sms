@@ -73,7 +73,7 @@ li,ul{
     display: block;
     font-size: 17px;
     font-weight: 500;
-    padding: 28px 20px;
+    padding: 20px 20px;
     text-decoration: none;
 }
 
@@ -93,6 +93,13 @@ li,ul{
     border-left: 5px solid #246263;
     display: block;
     padding-left: 15px;
+}
+.arrow {
+	text-align: center;
+    float: right;
+}
+.sub-menu {
+    background: #3d9394;
 }
 /*Main CSS*/
 
@@ -136,10 +143,17 @@ li,ul{
                 <div class="navi">
                     <ul>
                         <li class="active"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-                        <li><a href="#"><i class="fa fa-group"></i>Students</a></li>
+                        <li  data-toggle="collapse" data-target="#student-menu" class="collapsed">
+                        <a href="#"><i class="fa fa-group"></i>Students<span class="arrow"><i class="fa fa-arrow-right"></i></span></a>
+                        </li>
+                        	<ul class="sub-menu collapse" id="student-menu">
+                    			<li class="sub-menu"><a href="#">&bull; Student record</a></li>
+                    			<li class="sub-menu"><a href="#">&bull; Applicant's List</a></li>
+                    			<li class="sub-menu"><a href="#">&bull; Admit Student</a></li>
+                		</ul>
                         <li><a href="#"><i class="fa fa-user"></i>Teachers</a></li>
                         <li><a href="#"><i class="fa fa-odnoklassniki"></i>Parents</a></li>
-                        <li><a href="#"><i class="fa fa-cog"></i>Setting</a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
                     </ul>
                 </div>
             </div>
