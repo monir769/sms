@@ -101,6 +101,22 @@ li,ul{
 .sub-menu {
     background: #3d9394;
 }
+.buttonnew {
+    cursor: pointer;
+}
+.buttonnew {
+    border: none;
+    padding: 8px 16px;
+}
+.buttonnew {
+    color: #fff!important;
+    background-color: #4CAF50!important;
+}
+.buttonnew:hover {
+    background-color: #5bc0de!important;
+    color: #fff!important;
+}
+
 /*Main CSS*/
 
 @media only screen and (max-device-width: 767px) {
@@ -133,11 +149,39 @@ li,ul{
 </style>
 
 <body>
+<nav class="navbar navbar-inverse" style="border-radius:0px;">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+      	<li class="navbar-header"><a class="navbar-brand" href="#" style="color:white"><span class="glyphicon glyphicon-home"></span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li>
+          <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="glyphicon glyphicon-comment"></span></a>
+        </li>
+        <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-option-vertical"></span></a>
+        	<ul class="dropdown-menu">
+            	<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            	<li><a href="#"><i class="fa fa-key"></i> Change Password</a></li>
+            	<li><a href="#"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+          	</ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+ </div>
+</nav>
+
+
+
     <div class="container-fluid display-table">
         <div class="row display-table-row">
             <div class="col-md-2 col-sm-1 display-table-cell v-align box" id="navigation">
                 <div class="logo">
-                    <a hef="home.php"><h3><font color="yellow">Logo</font></h3>
+                    <a hef="home.php"><h3><font color="#1f7373">Logo</font></h3>
                     </a>
                 </div>
                 <div class="navi">
@@ -161,10 +205,95 @@ li,ul{
                 <!--other contents here-->
                 
                
-            </div>
-        </div>
 
-    </div>
+<div class="col-md-10 col-md-offset-1">
+
+            <div class="panel panel-success panel-table">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col col-xs-6">
+                    <h3 class="panel-title">Applicant's List</h3>
+                  </div>
+                  <div class="col col-xs-6 text-right">
+                    <button type="button" class="buttonnew">Create New</button>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <table class="table table-striped table-bordered table-list">
+                  <thead>
+                    <tr>
+                        <th class="hidden-xs"><div align="center">No.</div></th>
+                        <th><div align="center">Name</div></th>
+                        <th><div align="center">Class</div></th>
+                        <th><div align="center">Date</div></th>
+                        <th><div align="center"><em class="fa fa-cog"></em></div></th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                          <tr>
+                            <td class="hidden-xs" align="center">1</td>
+                            <td align="center">Abu</td>
+                            <td align="center">7</td>
+                            <td align="center">10-01-2017</td>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="hidden-xs" align="center">2</td>
+                            <td align="center">Faisal</td>
+                            <td align="center">9</td>
+                            <td align="center">12-01-2017</td>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="hidden-xs" align="center">3</td>
+                            <td align="center">Ahmed</td>
+                            <td align="center">8</td>
+                            <td align="center">09-01-2017</td>
+                            <td align="center">
+                              <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                </table>
+            
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+                  <div class="col col-xs-4"><br />Page 1 of 5
+                  </div>
+                  <div class="col col-xs-8">
+                    <ul class="pagination hidden-xs pull-right">
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                    </ul>
+                    <ul class="pagination visible-xs pull-right">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+   </div>
+
+
+
+            </div>
+     </div>
+
+</div>
 
 
 </body>
